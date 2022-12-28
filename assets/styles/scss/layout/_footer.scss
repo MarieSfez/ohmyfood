@@ -1,0 +1,31 @@
+
+ #ohmyfood {
+    color: #FFFFFF;
+    font-family: $title;
+    font-size: 18px;
+    letter-spacing: .1rem;
+    margin-left: 20px;
+    padding-top: 30px;
+ }
+
+ .footer_container {
+    @include footer_container;
+        
+
+        .footer_list {
+            @include footer;
+        }
+ }
+
+
+.footer_list .fa-sharp {
+    color: #FFFFFF;
+    margin-right: 15px;
+    font-size: 13px;
+}
+ 
+.footer_list .fa-sharp-hand {
+    color: #FFFFFF;
+    margin-right: 11px;
+    font-size: 13px;
+}

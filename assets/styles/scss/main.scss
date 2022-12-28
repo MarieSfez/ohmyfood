@@ -1,0 +1,24 @@
+//page ou je dois importer tous les folders et files 
+//1. utils - variables mixins ...
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/keyframes";
+
+//2. base
+@import "./base/typo";
+@import "./base/base";
+//3. components
+@import "./components/buttons";
+@import "./components/loader";
+@import "./components/like";
+
+//4. layout
+@import "./layout/footer";
+@import "./layout/header";
+//5. pages
+@import "./pages/homepage";
+@import "./pages/restaurant";
+
+
+
+

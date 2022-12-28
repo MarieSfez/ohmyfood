@@ -1,0 +1,102 @@
+button.explorer_button {
+    background: linear-gradient($secondary-pink, $primary-purple);
+    color: #f2f2f2;
+    border: none;
+    @include flex-center;
+    padding: 18px 32px;
+    font-size: 18px;
+    border-radius: 32px;
+    margin: auto;
+    transition: all .5s ease-in-out;
+    &:hover{
+        background: linear-gradient($secondary-pink-light, $primary-purple-light)  !important;
+        box-shadow:  0 3px 3px 3px #aaa;
+    }
+    @media only screen and (min-width: $tablet) and (max-width:$desktop){
+        font-size: 25px;
+    } 
+
+}
+
+
+
+ button  {
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+}
+button.button-dish{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    border: none;
+    margin-bottom: 15px;
+    
+    border-radius: 20px;
+    font-family: $p;
+    line-height:1.6;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+    height: 70px;
+    animation: displayMenu 1s ease-in-out ;
+    .dish-info{
+        padding: 10px 5px 10px 15px;
+        height: inherit;
+        h4 {
+            font-weight: bold;
+        } 
+    }
+   
+    .price {
+        padding: 10px 15px 10px 5px;
+        display: flex;
+        align-items: flex-end;
+          color:#808080 ; 
+        height: inherit;
+    }
+    .price-and-icon{
+        display: flex;
+        .icon-circle{
+            //margin-right: -100px;
+            transition:all  0.5s ease-in-out;
+            display: flex;
+            //width: 100px !important;
+            background-color: #99E2D0;
+            height: 100%;
+            i{
+                margin: auto;
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+    
+    &:hover{
+        .icon-circle{
+            //margin-right: 0 !important;
+            width: 120px !important;
+            i{
+                animation: rotateIcon 0.6s ease-in-out;
+            }
+
+        }
+    }
+}
+/*
+ button::before {
+    content: ""; 
+    position: absolute;
+    left:100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #99e2d0;
+    border-radius: 0  20px 20px 0;
+    transition: all .5s;
+    z-index: -1; //pour le placer en dessous du texte
+   
+}
+
+ button:hover::before  {
+    left: 80%;
+}*/
