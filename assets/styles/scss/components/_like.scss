@@ -1,0 +1,36 @@
+.like {
+    display: block;
+    position: relative; 
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+
+    &>i {
+        position: absolute;
+        font-size: 25px;
+        transform: scale(0.9, 1);
+
+        &:last-child {
+            display: none;
+            background: linear-gradient(180deg, $primary-purple 50%, $secondary-pink 100%);
+            background-size: 100% 200%;
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: $primary-purple;
+            animation: like ease-in-out 0.3s both;
+        }
+
+        &:first-child {
+            display: block;
+        }
+    }
+
+    &:hover i:first-child {
+        display: none; //le coeur est transparent ?
+    }
+
+    &:hover i:last-child {
+        display: block;
+    }
+}

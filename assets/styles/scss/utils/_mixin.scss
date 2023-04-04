@@ -1,0 +1,157 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin gradient_button {
+    background-image: linear-gradient($secondary-pink, $primary-purple);
+    color: #f2f2f2;
+    border: none;
+    @include flex-center;
+    padding: 15px 50px;
+    font-size: 18px;
+    border-radius: 32px;
+    margin: auto;
+}
+
+ 
+@mixin header_homepage  {
+    font-size: 32px;
+    @include flex-center;
+    font-family:$title;
+    padding:15px;
+}
+
+@mixin header_restaurants {
+    padding-bottom: 15px;
+
+    h1 {
+        @include flex-center;
+        font-family: $title;
+     }
+  
+     i {
+        position: relative;
+        bottom: 10;
+        right: 0;
+        top: 36px;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+     }
+}
+ 
+@mixin headers_h3_homepageOnly {
+    font-family:$p;
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    margin-top: 32px;
+    font-size: 20px;
+
+    @media only screen and (min-width: $tablet) and (max-width:$desktop){
+        font-size: 22px;       
+    }
+}
+
+
+@mixin section_menu {
+    width: 100%;
+    position: relative; // si j'enleve la valeur absolute le footer se voit.
+    margin-top: -65px;
+    // margin-top: -15px;
+    z-index: 100;
+    background-color: #f2f2f2;
+    border-radius: 35px 35px 0 0;
+    padding-bottom: 50px;
+
+
+    h2 {
+        font-family: $title;
+        width: 100%;
+        font-size: 30px;
+        margin-top: 30px;
+        // margin-left: 10px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    i {
+        font-size: 20px;
+    }
+}
+
+
+@mixin menus_title {
+    font-family: $p;
+    font-size:18px ;
+    text-transform: uppercase;
+    margin-left:15px;
+ 
+}
+
+
+/*@mixin buttons_menus {
+    margin: auto;
+    padding: 20px;
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-bottom: 15px;
+        padding: 10px 5px;
+        padding-left: 15px;
+        border-radius: 20px;
+        font-family: $p;
+        line-height:1.6;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);  
+     }
+
+     
+      
+    
+        h4 {
+            font-weight: bold;
+        }
+    
+    .price {
+        color:#808080 ; 
+    }
+
+}*/
+
+
+
+
+
+@mixin footer_container {
+    //margin-top: 50px;
+    background-color:#2c2c2c;
+    width: 100%;
+    height: 200px;
+    
+}
+
+@mixin footer {
+    padding-top: 20px;
+   
+        li {
+            list-style-type: none;
+            line-height: 1.4;
+            margin-left: 20px;
+        }
+
+        a {
+            list-style-type: none;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: $p;
+        }
+}
