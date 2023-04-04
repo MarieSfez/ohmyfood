@@ -1,0 +1,58 @@
+ .header_container h1 {
+    @include header_homepage;   
+ }
+
+ @media only screen and (min-width: $tablet) and (max-width:$desktop){
+   .header_container h1 {
+      font-size: 50px; 
+      // color: red;
+   }
+}
+
+
+
+ 
+
+ .pin_container {
+    @include flex-center;
+    width: 100%;
+    height: 60px;
+    background-color: #d3d3d3;
+ }
+ @media only screen and (min-width: $tablet) and (max-width:$desktop){
+    .pin_container i{
+     font-size: 20px;
+   }
+ }
+
+
+
+form .field {
+    padding: 15px;
+    width: 130px;
+    color: #000000;
+    background-color: #d3d3d3;
+    border: none;
+}
+@media only screen and (min-width: $tablet) and (max-width:$desktop){
+     form .field {
+     font-size: 20px;
+     width: 200px;
+     @include flex-center
+  }
+}
+
+
+
+.header_container_restaurants {
+   @include header_restaurants;
+      i{
+         color: #000000;
+      }
+}
+
+
+
+
+
+
